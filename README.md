@@ -14,9 +14,9 @@ Key Features:
 - Intelligent alert system
 
 Tech Stack
- fontend: React / HTML
-- Backend: Node.js / Python
-- Database: MongoDB / Firebase
+ fontend:  HTML
+- Backend: Python
+- Database:  Firebase
 - AI/ML: Python, TensorFlow
 
 How to Run
