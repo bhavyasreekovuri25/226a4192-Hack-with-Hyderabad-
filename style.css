@@ -1,48 +1,20 @@
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#f1f5f9;
-  color:#0f172a;
-}
-header{
-  background:#0a192f;
-  color:white;
-  padding:50px 20px;
-  text-align:center;
-}
-section{
-  background:white;
-  max-width:700px;
-  margin:20px auto;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-h2{
-  color:#0a192f;
-  border-bottom:2px solid #0a192f;
-  padding-bottom:5px;
-}
-.skills span{
-  background:#0a192f;
-  color:white;
-  padding:7px 14px;
-  border-radius:20px;
-  margin:5px;
-  display:inline-block;
-}
-.project-card{
-  border-left:4px solid #0a192f;
-  padding-left:15px;
-}
-a{
-  color:#0a192f;
-  font-weight:bold;
-}
-footer{
-  background:#0a192f;
-  color:white;
-  text-align:center;
-  padding:15px;
-  margin-top:20px;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f6f5fb;color:#1a1a2e}
+.hero{background:linear-gradient(135deg,#8e7cc3,#f7a8c4);padding:80px 20px 100px;text-align:center;border-radius:0 0 50px 50px;color:#1a1a2e}
+.hero h1{font-size:38px;font-weight:700}
+.hero h2{font-size:18px;font-weight:400;margin-top:8px;color:white}
+.badges{margin-top:20px}
+.badges span{background:rgba(255,255,255,0.85);padding:8px 16px;border-radius:20px;margin:5px;display:inline-block;font-size:13px;font-weight:600}
+.container{max-width:900px;margin:-40px auto 0;padding:20px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+.card{background:white;border-radius:20px;padding:24px;box-shadow:0 10px 30px rgba(0,0,0,0.06)}
+.card h3{font-size:18px;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.item label{font-size:10px;color:#8e7cc3;font-weight:700;letter-spacing:1px}
+.item p{font-size:13px;font-weight:600;margin-top:2px}
+.skill{display:inline-block;background:linear-gradient(135deg,#8e7cc3,#f7a8c4);color:white;padding:7px 14px;border-radius:20px;margin:5px;font-size:12px;font-weight:600}
+.proj{background:#f8f7ff;padding:18px;border-radius:14px}
+.proj h4{font-size:15px}
+.proj p{font-size:12px;margin:10px 0;line-height:1.6;color:#555}
+.btn{display:inline-block;background:linear-gradient(135deg,#8e7cc3,#f7a8c4);color:white;padding:10px 22px;border-radius:25px;text-decoration:none;font-weight:600;font-size:13px}
+footer{text-align:center;padding:30px;color:#999;font-size:12px}
+@media(max-width:800px){.container{grid-template-columns:1fr}}
