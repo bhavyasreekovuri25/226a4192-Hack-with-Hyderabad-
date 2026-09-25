@@ -1,0 +1,48 @@
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f1f5f9;
+  color:#0f172a;
+}
+header{
+  background:#0a192f;
+  color:white;
+  padding:50px 20px;
+  text-align:center;
+}
+section{
+  background:white;
+  max-width:700px;
+  margin:20px auto;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+h2{
+  color:#0a192f;
+  border-bottom:2px solid #0a192f;
+  padding-bottom:5px;
+}
+.skills span{
+  background:#0a192f;
+  color:white;
+  padding:7px 14px;
+  border-radius:20px;
+  margin:5px;
+  display:inline-block;
+}
+.project-card{
+  border-left:4px solid #0a192f;
+  padding-left:15px;
+}
+a{
+  color:#0a192f;
+  font-weight:bold;
+}
+footer{
+  background:#0a192f;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:20px;
+}
