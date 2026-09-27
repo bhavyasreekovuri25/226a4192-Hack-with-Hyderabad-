@@ -1,91 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BHAVYA SREE KOVURI</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#fff5f6;font-family:'Poppins',sans-serif;padding:28px;display:flex;justify-content:center}
-.wrapper{max-width:1100px;width:100%}
-.top{
- background:#ffe4e8;
- border:1.5px solid #e9b0be;
- border-radius:24px;
- padding:22px 30px;
- display:flex;
- justify-content:space-between;
- align-items:center;
- margin-bottom:22px;
-}
-.top h1{font-family:'Playfair Display',serif;color:#5d1830;font-size:36px;letter-spacing:1px}
-.badge{background:#ffcad4;border:1px solid #e9b0be;border-radius:20px;padding:6px 14px;font-size:13px;color:#5d1830}
-.sub{color:#8a4a5d;text-align:center;margin:12px 0 22px;font-size:15px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.card{background:#ffe4e8;border:1.5px solid #e9b0be;border-radius:20px;padding:22px}
-.card h2{font-family:'Playfair Display',serif;color:#5d1830;margin-bottom:14px}
-.pill{display:inline-block;background:#ffcad4;border:1px solid #e9b0be;border-radius:999px;padding:7px 16px;margin:5px;font-size:13px}
-.btn{border:1.5px solid #5d1830;border-radius:999px;padding:10px 22px;margin:5px;display:inline-block;font-size:14px}
-.btn.fill{background:#8a2d4b;color:#fff}
-.muted{font-size:13px;margin-top:12px;color:#2e1a20}
-@media(max-width:800px){.grid{grid-template-columns:1fr}.top{flex-direction:column;gap:10px}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavya Sree Kovuri - Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #fdf5f5;
+            --card-bg: #fff0f2;
+            --card-border: #f5d4da;
+            --text-main: #333333;
+            --text-header: #8a3343;
+            --tag-bg: #f3cbd2;
+            --tag-text: #661e2b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .portfolio-container {
+            max-width: 1050px;
+            width: 100%;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(138, 51, 67, 0.05);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative floral background simulation */
+        .portfolio-container::before, .portfolio-container::after {
+            content: '🌿';
+            position: absolute;
+            font-size: 5rem;
+            opacity: 0.08;
+            color: var(--text-header);
+            pointer-events: none;
+        }
+        .portfolio-container::before { top: -20px; left: -20px; transform: rotate(-45deg); }
+        .portfolio-container::after { bottom: -20px; right: -20px; transform: rotate(135deg); }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            border: 1px solid var(--card-border);
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-family: 'Georgia', serif;
+            color: var(--text-header);
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* Main Grid Layout */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1.2sfr 1fr;
+            gap: 25px;
+        }
+
+        @media (max-width: 768px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* Card Styling */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 30px;
+        }
+
+        .card-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.6rem;
+            color: var(--text-header);
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+        }
+
+        .card-title .icon {
+            font-size: 1.4rem;
+        }
+
+        .card p {
+            color: #444;
+            font-size: 0.98rem;
+            text-align: justify;
+        }
+
+        /* Project Section Specifics */
+        .project-heading {
+            font-size: 1.2rem;
+            color: #111;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        /* Education Details */
+        .education-details h3 {
+            font-size: 1.2rem;
+            color: #111;
+            margin-bottom: 5px;
+        }
+        .education-details p {
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        .education-details .institution {
+            color: #555;
+            font-weight: 600;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--tag-bg);
+            color: var(--tag-text);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        /* Contact Section */
+        .contact-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #111;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05rem;
+            margin-top: 5px;
+            transition: color 0.2s;
+        }
+
+        .contact-link:hover {
+            color: var(--text-header);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: #888;
+            letter-spacing: 0.5px;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+    </style>
 </head>
 <body>
-<div class="wrapper">
 
-<div class="top">
- <h1>BHAVYA SREE KOVURI</h1>
- <div>
-  <span class="badge">✦ Portfolio</span>
-  <span class="badge">🎓 Student</span>
-  <span class="badge">📅 CS • 2024-2027</span>
- </div>
+<div class="portfolio-container">
+    <header>
+        <h1>BHAVYA SREE KOVURI</h1>
+        <p>Aspiring Computer Science Engineer &bull; Aspiring Software Developer</p>
+    </header>
+
+    <div class="main-layout">
+        <!-- Left Column -->
+        <div class="column">
+            <section class="card">
+                <h2 class="card-title"><span class="icon">✏️</span> About Me</h2>
+                <p>Passionate Computer Science undergraduate driven by cybersecurity and space technology. I enjoy building secure systems, exploring satellite communications, and solving real-world problems through code. Focused on learning, innovating, and creating technology that protects and empowers.</p>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title"><span class="icon">📋</span> Projects</h2>
+                <div class="project-heading">36-Hour National Level Hackathon — Cybersecurity in Space Communication</div>
+                <p>Developed a project focused on protecting satellite information from unauthorized access and detecting cyber threats. Built security solutions to safeguard satellite communication channels, designed threat-detection mechanisms to identify and mitigate potential vulnerabilities in real-time.</p>
+            </section>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+            <section class="card">
+                <h2 class="card-title"><span class="icon">🎓</span> Education</h2>
+                <div class="education-details">
+                    <h3>B.Sc CS</h3>
+                    <p>Academic Year 2024–2027</p>
+                    <p class="institution">Viswabharathi Degree College</p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title"><span class="icon">⚙️</span> Skills</h2>
+                <div class="skills-container">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Numpy</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">TensorFlow</span>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 class="card-title"><span class="icon">✉️</span> Contact</h2>
+                <a href="mailto:bhavyasreekovuri25@gmail.com" class="contact-link">
+                    <span>bhavyasreekovuri25@gmail.com</span>
+                    <span>✉️</span>
+                </a>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        Portfolio &bull; 2024–2027 &bull; Open to collaborations & internships
+    </footer>
 </div>
-<p class="sub">Computer Science Student • Aspiring Software Developer</p>
 
-<div class="grid">
- <div class="card">
-  <h2>🎓 EDUCATION</h2>
-  <p style="font-size:26px;font-weight:700;color:#4a1022">B.Sc CS</p>
-  <p>Academic Year 2024-2027</p>
-  <p style="margin-top:12px">📍 Viswabharathi Degree College</p>
- </div>
-
- <div class="card">
-  <h2>⚡ SKILLS</h2>
-  <span class="pill">Python</span>
-  <span class="pill">Numpy</span>
-  <span class="pill">HTML</span>
-  <span class="pill">CSS</span><br>
-  <span class="pill">Django</span>
-  <span class="pill">Flask</span>
-  <span class="pill">Tensorflow</span>
- </div>
-
- <div class="card">
-  <h2>📁 PROJECTS</h2>
-  <p style="font-weight:700;font-size:18px;color:#4a1022">36-Hour National Level Hackathon</p>
-  <p style="font-weight:600;margin:6px 0">Cybersecurity in Space Communication Project</p>
-  <p style="font-size:13px;line-height:1.5">Project focused on protecting satellite information from unauthorised access and detects threat</p>
-  <div style="margin-top:10px">
-   <span class="pill">Cybersecurity</span>
-   <span class="pill">Satellite</span>
-   <span class="pill">Threat Detection</span>
-  </div>
- </div>
-
- <div class="card">
-  <h2>✉️ CONTACT</h2>
-  <span class="btn fill">✉️ Email Me</span>
-  <span class="btn">📞 Contact Me</span>
-  <p class="muted">✉️ bhavyasreekovuri25@gmail.com</p>
-  <p class="muted">📞 8978377118</p>
- </div>
-</div>
-
-<p style="text-align:center;margin-top:22px;color:#b07a8a;font-size:12px">© 2024 • Designed with light pink aesthetic • Open to internships & collaborations</p>
-</div>
 </body>
 </html>
