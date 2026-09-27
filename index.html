@@ -1,53 +1,91 @@
-<!DOCTYPE html><html><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bhavya Sree Kovuri</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BHAVYA SREE KOVURI</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#1a1230;color:#fff;font-family:Poppins,sans-serif}
-nav{padding:16px 5%;background:#231a45;display:flex;justify-content:space-between}
-.hero{padding:50px 5%}
-.email-btn{background:#7c6aaf;color:white;padding:12px 26px;border-radius:10px;text-decoration:none;display:inline-block;font-weight:600;margin-top:15px}
-.card{background:#231a45;border:1px solid #7c6aaf44;border-radius:14px;padding:20px;margin:12px 5%}
-.skills{margin:12px 5%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
-.skill{background:#231a45;border:1px solid #7c6aaf55;padding:12px;border-radius:8px;text-align:center;font-size:13px}
+body{background:#fff5f6;font-family:'Poppins',sans-serif;padding:28px;display:flex;justify-content:center}
+.wrapper{max-width:1100px;width:100%}
+.top{
+ background:#ffe4e8;
+ border:1.5px solid #e9b0be;
+ border-radius:24px;
+ padding:22px 30px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin-bottom:22px;
+}
+.top h1{font-family:'Playfair Display',serif;color:#5d1830;font-size:36px;letter-spacing:1px}
+.badge{background:#ffcad4;border:1px solid #e9b0be;border-radius:20px;padding:6px 14px;font-size:13px;color:#5d1830}
+.sub{color:#8a4a5d;text-align:center;margin:12px 0 22px;font-size:15px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.card{background:#ffe4e8;border:1.5px solid #e9b0be;border-radius:20px;padding:22px}
+.card h2{font-family:'Playfair Display',serif;color:#5d1830;margin-bottom:14px}
+.pill{display:inline-block;background:#ffcad4;border:1px solid #e9b0be;border-radius:999px;padding:7px 16px;margin:5px;font-size:13px}
+.btn{border:1.5px solid #5d1830;border-radius:999px;padding:10px 22px;margin:5px;display:inline-block;font-size:14px}
+.btn.fill{background:#8a2d4b;color:#fff}
+.muted{font-size:13px;margin-top:12px;color:#2e1a20}
+@media(max-width:800px){.grid{grid-template-columns:1fr}.top{flex-direction:column;gap:10px}}
 </style>
-</head><body>
-<nav><b>Bhavya Sree Kovuri</b><span>Hire Me</span></nav>
+</head>
+<body>
+<div class="wrapper">
 
-<div class="hero">
-<div style="border:1px solid #7c6aaf88;padding:4px 12px;border-radius:20px;display:inline-block;font-size:11px">BSc CS • Final Year • 2024-2027</div>
-<h1 style="margin-top:12px;font-size:38px">Hi, I'm Bhavya Sree Kovuri</h1>
-<p style="color:#c9b8f5;margin-top:6px">BSc Computer Science • Krishna University</p>
-<p style="color:#a99bc8;font-size:13px;margin-top:8px">Viswabharathi Degree College, Jaggayyapeta, NTR Dist, AP</p>
-<a class="email-btn" href="mailto:bhavyasreekovuri25@gmail.com">✉️ Email Me</a>
+<div class="top">
+ <h1>BHAVYA SREE KOVURI</h1>
+ <div>
+  <span class="badge">✦ Portfolio</span>
+  <span class="badge">🎓 Student</span>
+  <span class="badge">📅 CS • 2024-2027</span>
+ </div>
+</div>
+<p class="sub">Computer Science Student • Aspiring Software Developer</p>
+
+<div class="grid">
+ <div class="card">
+  <h2>🎓 EDUCATION</h2>
+  <p style="font-size:26px;font-weight:700;color:#4a1022">B.Sc CS</p>
+  <p>Academic Year 2024-2027</p>
+  <p style="margin-top:12px">📍 Viswabharathi Degree College</p>
+ </div>
+
+ <div class="card">
+  <h2>⚡ SKILLS</h2>
+  <span class="pill">Python</span>
+  <span class="pill">Numpy</span>
+  <span class="pill">HTML</span>
+  <span class="pill">CSS</span><br>
+  <span class="pill">Django</span>
+  <span class="pill">Flask</span>
+  <span class="pill">Tensorflow</span>
+ </div>
+
+ <div class="card">
+  <h2>📁 PROJECTS</h2>
+  <p style="font-weight:700;font-size:18px;color:#4a1022">36-Hour National Level Hackathon</p>
+  <p style="font-weight:600;margin:6px 0">Cybersecurity in Space Communication Project</p>
+  <p style="font-size:13px;line-height:1.5">Project focused on protecting satellite information from unauthorised access and detects threat</p>
+  <div style="margin-top:10px">
+   <span class="pill">Cybersecurity</span>
+   <span class="pill">Satellite</span>
+   <span class="pill">Threat Detection</span>
+  </div>
+ </div>
+
+ <div class="card">
+  <h2>✉️ CONTACT</h2>
+  <span class="btn fill">✉️ Email Me</span>
+  <span class="btn">📞 Contact Me</span>
+  <p class="muted">✉️ bhavyasreekovuri25@gmail.com</p>
+  <p class="muted">📞 8978377118</p>
+ </div>
 </div>
 
-<div class="card">
-<h3>🎓 Education</h3><br>
-<b>Viswabharathi Degree College</b><br>
-<span style="color:#c9b8f5;font-size:13px">Krishna University • BSc CS Final Year<br>2024-2027</span><br><br>
-<span style="font-size:13px">✉️ bhavyasreekovuri25@gmail.com<br>📞 +91 89783 77118</span>
+<p style="text-align:center;margin-top:22px;color:#b07a8a;font-size:12px">© 2024 • Designed with light pink aesthetic • Open to internships & collaborations</p>
 </div>
-
-<div style="margin:0 5%"><h3>💜 Skills</h3></div>
-<div class="skills">
-<div class="skill">Python</div><div class="skill">Pandas</div><div class="skill">NumPy</div>
-<div class="skill">HTML</div><div class="skill">CSS</div><div class="skill">TensorFlow</div>
-</div>
-
-<div class="card">
-<h3>🚀 Project</h3><br>
-<h2>Cybersecurity in Space Communication</h2>
-<p style="color:#a99bc8;font-size:13px;margin-top:8px;line-height:1.6">National 36-Hour Hackathon project focused on protecting satellite information from unauthorized access. Built secure communication framework and threat detection system.</p>
-<p style="margin-top:10px;font-size:11px;color:#7c6aaf">Python • Pandas • NumPy • TensorFlow</p>
-</div>
-
-<div class="card" style="text-align:center">
-<h2>Contact Me</h2>
-<p style="color:#a99bc8;font-size:12px;margin:8px 0">Open to internships & collaborations</p>
-<a class="email-btn" href="mailto:bhavyasreekovuri25@gmail.com">✉️ Email Me - bhavyasreekovuri25@gmail.com</a><br><br>
-<p style="font-size:13px">bhavyasreekovuri25@gmail.com • +91 89783 77118</p>
-</div>
-
-<footer style="text-align:center;padding:20px;color:#6a5a8a;font-size:11px">© 2024 Bhavya Sree Kovuri • Aesthetic Purple • No Profile Image</footer>
-</body></html>
+</body>
+</html>
