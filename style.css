@@ -1,0 +1,466 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fff1f6;
+    color: #30202a;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 3px 15px rgba(90, 30, 60, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #822c58;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #3e2733;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #a83f70;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 88vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff4f8,
+            #ffe5ef
+        );
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.welcome {
+    color: #a23d6c;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: #76264f;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #49343f;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.intro {
+    max-width: 720px;
+    margin: auto;
+
+    color: #5c4b53;
+    font-size: 18px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 28px;
+    margin: 5px;
+
+    border-radius: 30px;
+
+    background: #8c315e;
+    color: white;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #641e41;
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    background: white;
+    color: #8c315e;
+    border: 1px solid #8c315e;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+.section-title {
+    text-align: center;
+
+    color: #76264f;
+
+    font-size: 34px;
+
+    margin-bottom: 40px;
+
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 3px;
+
+    background: #a83f70;
+
+    margin: 12px auto 0;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-card {
+    background: rgba(255, 255, 255, 0.88);
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(100, 35, 65, 0.08);
+
+    border: 1px solid #f5d7e4;
+}
+
+.about-card p {
+    margin-bottom: 18px;
+
+    color: #493c43;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-card {
+    max-width: 800px;
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    border-left: 5px solid #9c3868;
+
+    box-shadow:
+        0 8px 25px rgba(100, 35, 65, 0.08);
+}
+
+.education-card h3 {
+    color: #76264f;
+    font-size: 24px;
+}
+
+.education-card h4 {
+    color: #49343f;
+    font-size: 19px;
+    margin: 8px 0;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.skill {
+    padding: 13px 25px;
+
+    background: white;
+
+    color: #7c2852;
+
+    border: 1px solid #f1cada;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 5px 15px rgba(100, 35, 65, 0.07);
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-4px);
+    background: #ffe2ed;
+}
+
+
+/* =========================
+   PROJECT
+========================= */
+
+.project-card {
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(100, 35, 65, 0.08);
+
+    border: 1px solid #f4d5e2;
+}
+
+.project-category {
+    color: #a23d6c;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.project-card h3 {
+    color: #76264f;
+
+    font-size: 27px;
+
+    margin: 8px 0;
+}
+
+.project-card p {
+    color: #4d4147;
+
+    margin-bottom: 15px;
+}
+
+.project-card ul {
+    margin-left: 22px;
+
+    color: #4d4147;
+}
+
+.project-card li {
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-card {
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 30px rgba(100, 35, 65, 0.08);
+}
+
+.contact-card p {
+    margin-top: 18px;
+    color: #493c43;
+}
+
+.contact-card a {
+    color: #8c315e;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #76264f;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .section {
+        padding: 60px 20px;
+    }
+
+    .about-card,
+    .project-card,
+    .contact-card {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .nav-links {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
